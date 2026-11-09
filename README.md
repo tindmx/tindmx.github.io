@@ -1,1 +1,1 @@
-# tindmxclips.github.io
+# tindmx.github.io
