@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Connect TikTok - TindmxClips</title>
+<style>:root{color-scheme:light dark}body{font:17px/1.6 -apple-system,system-ui,sans-serif;max-width:680px;margin:0 auto;padding:24px 16px}
+code{display:block;word-break:break-all;padding:14px;border:1px solid #8886;border-radius:8px;font-size:15px;margin:12px 0}
+button{font:inherit;padding:10px 18px;border-radius:8px;border:0;background:#e0245e;color:#fff}</style></head><body>
+<h1>Connect TikTok</h1>
+<div id="ok" hidden>
+  <p>TikTok sent this one-time code. Copy it and paste it as the <strong>value</strong> for the
+  <strong>tiktok-finish</strong> step of the "connect accounts" workflow within a few minutes.</p>
+  <code id="code"></code>
+  <button id="copy">Copy code</button>
+</div>
+<p id="err" hidden></p>
+<p><a href="/">TindmxClips</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Service</a></p>
+<script>
+const p = new URLSearchParams(location.search);
+const code = p.get("code");
+if (code) {
+  document.getElementById("ok").hidden = false;
+  document.getElementById("code").textContent = code;
+  document.getElementById("copy").onclick = async () => {
+    try { await navigator.clipboard.writeText(code); document.getElementById("copy").textContent = "Copied"; }
+    catch { getSelection().selectAllChildren(document.getElementById("code")); }
+  };
+} else {
+  const e = document.getElementById("err"); e.hidden = false;
+  e.textContent = p.get("error_description") || p.get("error") || "No code found. Start again from the connect accounts workflow.";
+}
+</script></body></html>
