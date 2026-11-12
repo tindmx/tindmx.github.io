@@ -1,20 +1,21 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light dark}body{font:17px/1.6 -apple-system,system-ui,sans-serif;max-width:680px;margin:0 auto;padding:24px 16px}h1{font-size:1.6em}a{color:#e0245e}footer{margin-top:40px;font-size:.9em;opacity:.7}</style><title>Privacy Policy - TindmxClips</title></head><body>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light dark}body{font:17px/1.6 -apple-system,system-ui,sans-serif;max-width:680px;margin:0 auto;padding:24px 16px}h1{font-size:1.6em}a{color:#e0245e}footer{margin-top:40px;font-size:.9em;opacity:.7}</style><title>Privacy Policy - Lab Rat Logic HQ</title></head><body>
 <h1>Privacy Policy</h1>
-<p><em>Last updated: November 10, 2026</em></p>
-<p>This policy covers <strong>clipbot</strong>, the application TindmxClips uses to upload videos to YouTube.</p>
+<p>Last updated: November 12, 2026</p>
+<p>This policy covers <strong>clipbot</strong>, the private tool that Lab Rat Logic HQ uses to publish its own videos to YouTube and TikTok. clipbot is used only by the channel owner, on the owner's own accounts.</p>
 <h2>What data the app accesses</h2>
-<p>clipbot requests a single Google permission: <code>youtube.upload</code>, which lets it upload videos to the YouTube channel of the account that signs in. It does not read your email, contacts, watch history, comments, or any other Google account data.</p>
+<p>clipbot requests a single Google permission: <code>youtube.upload</code>, which lets it upload videos to the YouTube channel of the account that signs in. It uses it for two things only: uploading a video (with its title, description, tags and scheduled publish time) and setting that video's thumbnail. It does not read your email, contacts, watch history, comments, playlists or any other account data, and it never edits or deletes existing videos.</p>
+<p>For weekly performance reports, clipbot also reads the public statistics (such as view counts) of the channel's own videos with a YouTube Data API key. This involves no sign-in and no personal data.</p>
 <h2>How the data is used</h2>
-<p>The sign-in token is used only to upload Shorts and set their title, description, tags and publish time on the channel owner's own channel. clipbot is operated solely by the TindmxClips channel owner; no other users sign in to it.</p>
+<p>The sign-in token is used only to upload the channel owner's own videos to the owner's own channel after the owner approves each episode. It is never used for any other account and never used to show ads or build profiles.</p>
 <h2>Storage and sharing</h2>
-<p>The sign-in token is stored encrypted as a secret in a private GitHub repository and is never sold, shared, or transferred to third parties. Upload history (clip IDs, YouTube video IDs, publish times) is stored privately to avoid duplicate uploads.</p>
-<p>clipbot's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<p>The sign-in token is stored in clipbot's private state file inside a private GitHub repository that only the channel owner can access. It is never sold, shared or transferred to third parties. clipbot also keeps a small upload history (which video was uploaded, its YouTube video ID and publish time) in the same private file.</p>
+<p>clipbot's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 <h2>YouTube</h2>
 <p>clipbot uses YouTube API Services. By using it you are also bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 <h2>TikTok</h2>
-<p>clipbot can also post the same Shorts to the TindmxClips TikTok account using TikTok's Login Kit and Content Posting API. It requests only <code>user.info.basic</code> (to identify the connected account), <code>video.publish</code> (to post videos to that account) and <code>video.list</code> (to read view, like and comment counts of the account's own posts for performance reports). It does not access messages, followers, or any other TikTok data, and only the channel owner connects an account. TikTok tokens are stored encrypted in private storage and are never shared. Access can be revoked at any time in the TikTok app under Settings and privacy &gt; Security &gt; Manage app permissions.</p>
-<h2>Revoking access</h2>
-<p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Stored tokens are deleted on request.</p>
+<p>clipbot can also post the channel's Shorts to the Lab Rat Logic HQ TikTok account using TikTok's Login Kit and Content Posting API. It requests only the permissions needed to identify the connected account and to publish or upload that account's own videos (<code>user.info.basic</code>, <code>video.publish</code> and, where used, <code>video.upload</code>), plus <code>video.list</code> to read the account's own video statistics for reports. The TikTok token is stored the same way as the YouTube token and is never shared. See the <a href="https://www.tiktok.com/legal/page/us/privacy-policy/en">TikTok Privacy Policy</a>.</p>
+<h2>Revoking access and deletion</h2>
+<p>Google access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, and TikTok access in the TikTok app under Settings and privacy, Security, Manage app permissions. Stored tokens are deleted on request.</p>
 <h2>Contact</h2>
 <p><a href="mailto:tindmxclips@gmail.com">tindmxclips@gmail.com</a></p>
 <footer><a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · Contact: <a href="mailto:tindmxclips@gmail.com">tindmxclips@gmail.com</a></footer></body></html>
